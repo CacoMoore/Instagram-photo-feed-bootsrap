@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f19ad29e48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>&nbsp <strong>Instagram</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success py-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="container-fluid modal-body d-flex flex-column">
+                                        Caption:
+                                        <div class="row input-group">
+                                          <textarea class="col form-control ms-2 rounded" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
+                                        <div class="row">
+                                          <button type="button" class="col-1 btn btn-light border border-secondary border-opacity-10 ms-1 my-3 me-2" data-bs-toggle="button"><i class="fa-solid fa-camera"></i></button>
+                                          <button type="button" class="col-1 btn btn-light border border-secondary border-opacity-10 ms-1 my-3" data-bs-toggle="button"><i class="fa-solid fa-location-dot"></i></button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown mx-5">
+                        <a class="nav-link dropdown-toggle btn btn-secondary btn-sm text-white"  href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+        
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4 my-1">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://media.traveler.es/photos/6137835770e3cff8b85fa572/1:1/w_800,h_800,c_limit/15968.jpg" class="card-img-top rounded" alt="...">
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://www.traveloffpath.com/wp-content/uploads/2021/11/snorkeling-playa-del-carmen-.jpg.webp" class="card-img-top rounded" alt="...">
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://ringwoodvetemergency.com.au/wp-content/uploads/2020/10/Spring-Dog-1-1-1024x1024.jpg" class="card-img-top rounded" alt="...">
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://t1.ev.ltmcdn.com/es/posts/2/7/0/se_puede_tener_una_nutria_como_mascota_3072_600_square.jpg" class="card-img-top rounded" alt="...">
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="https://img.freepik.com/fotos-premium/puente-rialto-gran-canal-venecia-italia-tarde-atardecer-cielo-rosa-purpura-nubes-imagen-cuadrada-tonificada-lugar-famoso-lugares-romanticos-venecia-italia_87646-9089.jpg" class="card-img-top rounded" alt="...">
+                          
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="https://i.pinimg.com/originals/83/53/d2/8353d293af2a70b140114c8f455b5a1e.jpg" class="card-img-top rounded" alt="...">
+                          
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="https://www.lugaresturisticos.org/wp-content/uploads/2020/09/paris.jpg" class="card-img-top rounded" alt="...">
+                          
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="https://i.pinimg.com/originals/0d/1e/08/0d1e088e76a94d707f4a90dfa6aa11a9.jpg" class="card-img-top rounded" alt="...">
+                          
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="https://t2.ea.ltmcdn.com/es/posts/5/0/7/colicos_en_los_caballos_sintomas_y_tratamiento_20705_600.jpg" class="card-img-top rounded" alt="...">
+                          
+                        </div>
+                      </div>
+                  </div>
+            
+            </div>
+        </div>
+
+        <div class="tab-pane fade d-flex justify-content-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container-fuid">
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Paisaje verde</strong></div><div class="d-inline">11/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://media.traveler.es/photos/6137835770e3cff8b85fa572/1:1/w_800,h_800,c_limit/15968.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>246 Likes</strong> <br> Lugar bonito sureño</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Playa del Carmen</strong></div><div class="d-inline">12/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://www.traveloffpath.com/wp-content/uploads/2021/11/snorkeling-playa-del-carmen-.jpg.webp" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>3579 Likes</strong> <br> Lugar para ir de vacaciones</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Perrito</strong></div><div class="d-inline">13/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://ringwoodvetemergency.com.au/wp-content/uploads/2020/10/Spring-Dog-1-1-1024x1024.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>1963 Likes</strong> <br> Perrito muy primaveral</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Nutria</strong></div><div class="d-inline">14/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://t1.ev.ltmcdn.com/es/posts/2/7/0/se_puede_tener_una_nutria_como_mascota_3072_600_square.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>652 Likes</strong> <br> Nutria saludando</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Puente en Venecia</strong></div><div class="d-inline">15/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://img.freepik.com/fotos-premium/puente-rialto-gran-canal-venecia-italia-tarde-atardecer-cielo-rosa-purpura-nubes-imagen-cuadrada-tonificada-lugar-famoso-lugares-romanticos-venecia-italia_87646-9089.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>475 Likes</strong> <br> Lugar para conocer</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Puente oculto</strong></div><div class="d-inline">16/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://i.pinimg.com/originals/83/53/d2/8353d293af2a70b140114c8f455b5a1e.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>4899 Likes</strong> <br> Lugar para descansar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Arco de triunfo</strong></div><div class="d-inline">17/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://www.lugaresturisticos.org/wp-content/uploads/2020/09/paris.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>389 Likes</strong> <br> Oui oui monsieur</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Paisaje otoñal</strong></div><div class="d-inline">18/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://i.pinimg.com/originals/0d/1e/08/0d1e088e76a94d707f4a90dfa6aa11a9.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>578 Likes</strong> <br> Lugar para pensar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card my-4" style="width: 30rem;">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="d-inline"><strong>Caballo</strong></div><div class="d-inline">19/20</div>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://t2.ea.ltmcdn.com/es/posts/5/0/7/colicos_en_los_caballos_sintomas_y_tratamiento_20705_600.jpg" class="card-img-top rounded" alt="...">
+                    </li>
+                    <li class="list-group-item">
+                      <p><strong>647 Likes</strong> <br>Para hacer deporte</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              
+        </div>
+        
+      </div>
+
+    
+        
+    </div> 
+     
+    
+    
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
